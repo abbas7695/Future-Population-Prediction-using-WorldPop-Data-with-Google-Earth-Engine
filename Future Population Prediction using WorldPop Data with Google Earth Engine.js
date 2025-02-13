@@ -1,6 +1,6 @@
 // Future Population Prediction using WorldPop Data with Google Earth Engine
 var worldPop: ImageCollection "WorldPop Global Project Population Data: Estimated Residential Population per 100x100m Grid Square" // Import WoldPop data
-Var roi: Table "projects/ee-scholarhasnain5/assets/Gaza-Strip"  // Import Study area 
+var roi: Table "projects/ee-scholarhasnain5/assets/Gaza-Strip"  // Import Study area 
 
 // Population data visualization
 var popVis = { min: 0, max: 100, palette: ['white', 'blue', 'green', 'yellow', 'red'] };
@@ -28,10 +28,6 @@ Map.addLayer(pop2030, popVis, 'Gaza-Strip Population 2030 Prediction'); // Show 
 // Predict 2040
 var pop2040 = regression.select('scale').multiply(2040).add(regression.select('offset'));
 Map.addLayer(pop2040, popVis, 'Gaza-Strip Population 2040 Prediction'); // Show 2040 data
-
-// Predict 2050
-var pop2050 = regression.select('scale').multiply(2050).add(regression.select('offset'));
-Map.addLayer(pop2050, popVis, 'Gaza-Strip Population 2050 Prediction'); // Show 2050 data
 
 // Export the population data to Google Drive
 Export.image.toDrive({
