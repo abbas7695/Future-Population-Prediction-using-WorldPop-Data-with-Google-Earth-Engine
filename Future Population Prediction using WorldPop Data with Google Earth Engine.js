@@ -5,9 +5,9 @@ Var roi: Table "projects/ee-scholarhasnain5/assets/Gaza-Strip"  // Import Study 
 // Population data visualization
 var popVis = { min: 0, max: 100, palette: ['white', 'blue', 'green', 'yellow', 'red'] };
 
-// Java population data from worldpop
+// population data from worldpop
 var gazaPop = worldPop.filterBounds(roi).filter(ee.Filter.eq('country', 'PSE')).map(function(feat){
-  return feat.clip(roi); // Clip data to only part of java island
+  return feat.clip(roi); // Clip data to only study area
 });
 print(gazaPop); // Print all the population data
 Map.addLayer(gazaPop.sort('system:time_start', false).first(), popVis, 'Gaza-Strip Population 2020'); // Show 2020 data
