@@ -1,6 +1,6 @@
 // Future Population Prediction using WorldPop Data with Google Earth Engine
-var worldPop: ImageCollection "WorldPop Global Project Population Data: Estimated Residential Population per 100x100m Grid Square" // Import WoldPop data
-var roi: Table "projects/ee-scholarhasnain5/assets/Gaza-Strip"  // Import Study area 
+var worldPop = ee.ImageCollection("WorldPop/GP/100m/pop"),
+    roi = ee.FeatureCollection("projects/ee-scholarhasnain5/assets/Gaza-Strip"); // Import Worldpop Data and Study Area 
 
 // Population data visualization
 var popVis = { min: 0, max: 100, palette: ['white', 'blue', 'green', 'yellow', 'red'] };
