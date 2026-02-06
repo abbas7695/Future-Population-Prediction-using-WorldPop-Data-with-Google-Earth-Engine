@@ -141,6 +141,8 @@ This workflow is suitable for:
 
 If you use this workflow in academic work, please cite:
 
+> Formal and informal settlements and corresponding demographic patterns in Gaza Strip: deep learning approach to urban sustainability ([Geocarto Tnternational](https://doi.org/10.1080/10106049.2025.2596245))
+, UrbanComp Lab, School of Geography and Information Engineering, China University of Geosciences, Wuhan, People's Republic of China
 > WorldPop ([www.worldpop.org](http://www.worldpop.org)), School of Geography and Environmental Science, University of Southampton.
 
 ---
