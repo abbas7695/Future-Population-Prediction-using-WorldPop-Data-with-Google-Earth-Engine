@@ -1,4 +1,3 @@
----
 
 # Future Population Prediction Using WorldPop Data in Google Earth Engine
 
