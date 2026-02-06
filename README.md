@@ -1,6 +1,11 @@
 
 # Future Population Prediction Using WorldPop Data in Google Earth Engine
 
+## Author
+
+**Hasnain Abbas**
+PhD Scholar | Research Interest: SDG 11, Cartography, GIS&RS, GeoAI & its Applications in Land Changes
+
 ## Overview
 
 This repository presents a **Google Earth Engine (GEE)–based workflow** for **future population prediction** using **WorldPop gridded population data**. The script demonstrates how to model historical population trends and generate **pixel-level population projections** for future years using **linear regression**.
@@ -140,10 +145,4 @@ If you use this workflow in academic work, please cite:
 
 ---
 
-## Author
-
-**Hasnain Abbas**
-PhD Scholar | Research Interest: SDG 11, Cartography, GIS&RS, GeoAI & its Applications in Land Changes
-
----
 
